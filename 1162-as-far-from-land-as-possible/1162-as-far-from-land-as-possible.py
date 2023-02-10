@@ -24,7 +24,7 @@ class Solution:
                         q.append((new_x, new_y))
                         grid[new_x][new_y] = 1
                         
-        return iteration-1
+        return iteration-1 ## Because last iteration would be added at the end when we would have no elements in q
                     
                 
         
