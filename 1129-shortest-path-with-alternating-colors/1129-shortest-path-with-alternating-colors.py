@@ -15,13 +15,13 @@ class Solution:
                 blue[i] = [j]
                 
         q, visited, ans= deque(), set(), [-1]*n
-        q.append([0,0,"None"])
+        q.append([0,0,"None"]) ## node, distnace from 0, previous edge colour
         visited.add((0,"None"))
         
         while q:
             node, dist, color = q.popleft()
             if ans[node] == -1:
-                ans[node] = dist
+                ans[node] = dist ## bfs works because first time visit would be the naswer
             
             if color!="Red" and node in red:
                 for ne in red[node]:
