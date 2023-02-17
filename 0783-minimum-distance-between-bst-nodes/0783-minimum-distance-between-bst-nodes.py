@@ -9,6 +9,10 @@ class Solution:
         if not root:
             return []
         return self.inorder(root.left) + [root.val] + self.inorder(root.right)
+    
+    ### inorder traversal would return the sorted array as the tree is a BST ###
+    ### Next, we just check the differences between two consecutive numbers in the array ###
+    
     def minDiffInBST(self, root: Optional[TreeNode]) -> int:
         temp = self.inorder(root)
         ans = float("inf")
