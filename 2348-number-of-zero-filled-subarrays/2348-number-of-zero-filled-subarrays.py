@@ -3,6 +3,11 @@ class Solution:
         #### if a sub=array has n consecutive zeros, we have n(n+1)/2 total number of sub-arrays filled with zeros ####
         return n*(n+1)//2
     def zeroFilledSubarray(self, nums: List[int]) -> int:
+        
+        ## Find the runs of zeros ##
+        ## calculate the sum of run_sum of these runs ##
+        
+        
         left, right = 0, 1
         ans = 0
         while right<len(nums):
