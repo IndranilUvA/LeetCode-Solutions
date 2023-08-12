@@ -4,7 +4,7 @@ class Solution:
         """
         We create a dp matrix, dp[i][j] is the answer for i,jth cell.
         Now, dp[0][0] is initiated based on the original 0,0th element
-        The other dp[i][j]
+        The other dp[i][j] = dp[i-1][j] + dp[i][j-1]
         
         """
         
